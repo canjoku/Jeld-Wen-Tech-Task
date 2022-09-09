@@ -1,22 +1,20 @@
-// ** SOQL query should be moved outside of the for loop.
+// ** The provided code does not fit with the description outlined. Why is there a query in a loop if the function is supposed to be passed in a list of accounts as parameter. 
 
-// ** The function accsrt takes in a parameter. I see no use for it here. 
 
-// ** is processed a custom field? if so, __c will need to be appended. 
+// ** In any case, SOQL query should be moved outside of the for loop.
 
-// Not minor variable name adjustments. 
 
 public class AccSrt {
 
-    public static List<Account> accsrt(List<ID> la){
-        Account acc = [SELECT Name from Account WHERE processed__c = false]; 
+    public static List<Account> accsrt(List<Account> la){
+       
         List<sObject> retAccs = new List<Account>();
 
-       for(Account a : acc) {
+        for(Account a : la) {
             if(a.RecordTypeId = '00N580000097LSc') {
                 retAccs.put(a)
            } 
-       }
+        }
 
     return retAccs;
    }
