@@ -23,6 +23,7 @@ private class TestAccSrt{
         insert la;
     }
 
+    @IsTest
     private static void testAccsrt() {
         Test.startTest();
         List<Account> allAcounts = [SELECT name from Account where processed = false]; 
