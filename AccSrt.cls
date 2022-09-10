@@ -1,6 +1,5 @@
 // ** The provided code does not fit with the description outlined. Why is there a query in a loop if the function is supposed to be passed in a list of accounts as parameter. 
 
-
 // ** In any case, SOQL query should be moved outside of the for loop.
 
 
