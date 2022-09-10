@@ -59,7 +59,6 @@ public class CaseUtility {
         }
     }
 
-
     private static void notDear1InlandDana(Case cs) {
         if(deConditionalNotDear1(cs) && cs.Account.Distribution_Channel__c == 'Inland DANA') {
             cs.OwnerId = QueueMap.get('Inbox_DANA_Deutschland');
